@@ -8,6 +8,7 @@ function Clients() {
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
         {clients.map((client, index) => (
           <div
+            key={client.id}
             className={` flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px]`}
           >
             <img
